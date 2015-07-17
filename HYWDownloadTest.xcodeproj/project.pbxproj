@@ -11,10 +11,12 @@
 		04F57B441B593EEF00E41D57 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F57B431B593EEF00E41D57 /* AppDelegate.m */; };
 		04F57B471B593EEF00E41D57 /* HYWDownloadTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04F57B451B593EEF00E41D57 /* HYWDownloadTest.xcdatamodeld */; };
 		04F57B4A1B593EEF00E41D57 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F57B491B593EEF00E41D57 /* ViewController.m */; };
-		04F57B4D1B593EEF00E41D57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F57B4B1B593EEF00E41D57 /* Main.storyboard */; };
 		04F57B4F1B593EEF00E41D57 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04F57B4E1B593EEF00E41D57 /* Images.xcassets */; };
 		04F57B521B593EEF00E41D57 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F57B501B593EEF00E41D57 /* LaunchScreen.xib */; };
 		04F57B5E1B593EEF00E41D57 /* HYWDownloadTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F57B5D1B593EEF00E41D57 /* HYWDownloadTestTests.m */; };
+		04F57B6B1B593F5200E41D57 /* HYWDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F57B681B593F5200E41D57 /* HYWDownloadManager.m */; };
+		04F57B6C1B593F5200E41D57 /* ProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F57B6A1B593F5200E41D57 /* ProgressView.m */; };
+		04F57B6F1B593F8E00E41D57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F57B6D1B593F8E00E41D57 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,12 +38,16 @@
 		04F57B461B593EEF00E41D57 /* HYWDownloadTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HYWDownloadTest.xcdatamodel; sourceTree = "<group>"; };
 		04F57B481B593EEF00E41D57 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		04F57B491B593EEF00E41D57 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		04F57B4C1B593EEF00E41D57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04F57B4E1B593EEF00E41D57 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		04F57B511B593EEF00E41D57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		04F57B571B593EEF00E41D57 /* HYWDownloadTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HYWDownloadTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F57B5C1B593EEF00E41D57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04F57B5D1B593EEF00E41D57 /* HYWDownloadTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYWDownloadTestTests.m; sourceTree = "<group>"; };
+		04F57B671B593F5200E41D57 /* HYWDownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYWDownloadManager.h; sourceTree = "<group>"; };
+		04F57B681B593F5200E41D57 /* HYWDownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYWDownloadManager.m; sourceTree = "<group>"; };
+		04F57B691B593F5200E41D57 /* ProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressView.h; sourceTree = "<group>"; };
+		04F57B6A1B593F5200E41D57 /* ProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressView.m; sourceTree = "<group>"; };
+		04F57B6E1B593F8E00E41D57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +93,11 @@
 				04F57B431B593EEF00E41D57 /* AppDelegate.m */,
 				04F57B481B593EEF00E41D57 /* ViewController.h */,
 				04F57B491B593EEF00E41D57 /* ViewController.m */,
-				04F57B4B1B593EEF00E41D57 /* Main.storyboard */,
+				04F57B671B593F5200E41D57 /* HYWDownloadManager.h */,
+				04F57B681B593F5200E41D57 /* HYWDownloadManager.m */,
+				04F57B691B593F5200E41D57 /* ProgressView.h */,
+				04F57B6A1B593F5200E41D57 /* ProgressView.m */,
+				04F57B6D1B593F8E00E41D57 /* Main.storyboard */,
 				04F57B4E1B593EEF00E41D57 /* Images.xcassets */,
 				04F57B501B593EEF00E41D57 /* LaunchScreen.xib */,
 				04F57B451B593EEF00E41D57 /* HYWDownloadTest.xcdatamodeld */,
@@ -202,7 +212,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04F57B4D1B593EEF00E41D57 /* Main.storyboard in Resources */,
+				04F57B6F1B593F8E00E41D57 /* Main.storyboard in Resources */,
 				04F57B521B593EEF00E41D57 /* LaunchScreen.xib in Resources */,
 				04F57B4F1B593EEF00E41D57 /* Images.xcassets in Resources */,
 			);
@@ -224,8 +234,10 @@
 			files = (
 				04F57B441B593EEF00E41D57 /* AppDelegate.m in Sources */,
 				04F57B471B593EEF00E41D57 /* HYWDownloadTest.xcdatamodeld in Sources */,
+				04F57B6B1B593F5200E41D57 /* HYWDownloadManager.m in Sources */,
 				04F57B4A1B593EEF00E41D57 /* ViewController.m in Sources */,
 				04F57B411B593EEF00E41D57 /* main.m in Sources */,
+				04F57B6C1B593F5200E41D57 /* ProgressView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,20 +260,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		04F57B4B1B593EEF00E41D57 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				04F57B4C1B593EEF00E41D57 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		04F57B501B593EEF00E41D57 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				04F57B511B593EEF00E41D57 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		04F57B6D1B593F8E00E41D57 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04F57B6E1B593F8E00E41D57 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -1,8 +1,8 @@
 //
 //  ViewController.h
-//  HYWDownloadTest
+//  用自己的框架断点下载
 //
-//  Created by heew on 15/7/17.
+//  Created by heew on 15/7/16.
 //  Copyright (c) 2015年 adhx. All rights reserved.
 //
 
