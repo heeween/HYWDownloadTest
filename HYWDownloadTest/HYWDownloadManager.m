@@ -83,7 +83,6 @@ static id _instance;
     return _fileName;
 } // fileName懒加载
 
-
 - (NSURLSessionDataTask *)task {
     if (!_task) {
         // 创建请求
@@ -151,15 +150,17 @@ static id _instance;
     // 打开流
     [self.stream open];
     
-    // 获得服务器这次请求 返回数据的总长度
-    NSInteger downloadLength = [[[NSFileManager defaultManager] attributesOfItemAtPath:HYWCachesFilePath(self.fileName) error:nil][NSFileSize] integerValue];
-    self.totalLength = [response.allHeaderFields[@"Content-Length"] integerValue] + downloadLength;
-    
     // 存储总长度
     NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithContentsOfFile:HYWCachesFilePath(@"HYWDownloadInfo.plist")];
-    if (dict == nil) dict = [NSMutableDictionary dictionary];
-    dict[self.fileName] = @(self.totalLength);
-    [dict writeToFile:HYWCachesFilePath(@"HYWDownloadInfo.plist") atomically:YES];
+    if (dict == nil) {
+        dict = [NSMutableDictionary dictionary];
+        // 获得服务器这次请求 返回数据的总长度
+        NSInteger downloadLength = [[[NSFileManager defaultManager] attributesOfItemAtPath:HYWCachesFilePath(self.fileName) error:nil][NSFileSize] integerValue];
+        self.totalLength = [response.allHeaderFields[@"Content-Length"] integerValue] + downloadLength;
+        
+        dict[self.fileName] = @(self.totalLength);
+        [dict writeToFile:HYWCachesFilePath(@"HYWDownloadInfo.plist") atomically:YES];
+    }
     
     // 接收这个请求，允许接收服务器的数据
     completionHandler(NSURLSessionResponseAllow);
