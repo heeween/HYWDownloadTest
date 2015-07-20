@@ -11,8 +11,6 @@
 
 
 
-
-
 @interface HYWDownloadManager () <NSURLSessionDataDelegate>
 /**下载URL */
 @property (nonatomic, strong) NSString *downloadUrl;

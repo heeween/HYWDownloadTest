@@ -21,6 +21,8 @@
 
 
 static NSString *urlString = @"http://120.25.226.186:32812/resources/videos/minion_01.mp4";
+static NSString *string2 = @"http://www.baidu.com";
+
 
 
 - (void)viewDidLoad {
